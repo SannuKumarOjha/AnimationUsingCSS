@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.box div:nth-child(1){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 50px;
+    left: 20px;
+    animation: animate 2s linear infinite;
+}
+.box div:nth-child(2){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 100px;
+    left: 150px;
+    animation: animate 4s linear infinite;
+}
+.box div:nth-child(3){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 200px;
+    left: 500px;
+    animation: animate 8s linear infinite;
+}
+.box div:nth-child(4){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 400px;
+    left: 300px;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    bottom: 100px;
+    left: 50px;
+    animation: animate 13s linear infinite;
+}
+
+.box div:nth-child(6){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 50px;
+    right: 20px;
+    animation: animate 3s linear infinite;
+}
+.box div:nth-child(7){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 100px;
+    right: 150px;
+    animation: animate 5s linear infinite;
+}
+.box div:nth-child(8){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 300px;
+    right: 500px;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(9){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    top: 400px;
+    right: 300px;
+    animation: animate 2s linear infinite;
+}
+.box div:nth-child(10){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    bottom: 100px;
+    right: 50px;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) translateY(-500px) rotate(360deg);
+        opacity: 0.5;
+    }
+}
